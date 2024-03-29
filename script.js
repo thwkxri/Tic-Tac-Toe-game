@@ -46,5 +46,6 @@ restartBtn.addEventListener('click', (e) => {
     cell.textContent = '';
   })
   winInfo.textContent = '';
+  gameOver = false;
 })
 

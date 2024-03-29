@@ -1,9 +1,27 @@
+html {
+  touch-action: pan-x pan-y;
+  -ms-touch-action: pan-x pan-y;
+}
+
+body {
+  background: #1b2837;
+  color: #6b7885;
+}
+
 .board {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  font-weight: bold;
+  height: 90vh;
+}
+
+#board-title {
+  font-family: "Oswald", sans-serif;
+  color: #6b7885;
+  font-size: 60px;
+  letter-spacing: 3px;
 }
 
 .row {
@@ -11,37 +29,149 @@
 }
 
 .cell {
-  height: 150px;
-  width: 150px;
-  border: 2px solid black;
+  height: 170px;
+  width: 170px;
+  border: 10px solid #6b7885;
   cursor: crosshair;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 90px;
+  font-family: "Kanit", sans-serif;
+}
+
+#cell-1, #cell-2, #cell-3 {
+  border-top: none;
+}
+
+#cell-1, #cell-4, #cell-7 {
+  border-left: none;
+}
+
+#cell-3, #cell-6, #cell-9 {
+  border-right: none;
+}
+
+#cell-7, #cell-8, #cell-9 {
+  border-bottom: none;
 }
 
 .restart-btn {
   width: 300px;
-  height: 50px;
+  height: 60px;
   font-size: 25px;
-  background-color: deepskyblue;
+  background-color: #6b7885;
   cursor: pointer;
   border-radius: 5px;
-  border: 1px solid black;
-  transition: filter 0.2s ease;
+  border: none;
+  transition: filter 0.3s ease;
+  font-size: 33px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
 }
 
 #win-info {
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 @media (hover: hover) {
   .restart-btn:hover {
-    filter: brightness(90%);
-    transition: filter 0.2s ease;
+    filter: brightness(85%);
+    transition: filter 0.3s ease;
+  }
+}
+@media (max-width: 650px) {
+  #board-title {
+    font-family: "Oswald", sans-serif;
+    color: #6b7885;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  .cell {
+    height: 120px;
+    width: 120px;
+    border: 7px solid #6b7885;
+    cursor: crosshair;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: "Kanit", sans-serif;
+  }
+}
+@media (max-width: 415px) {
+  #board-title {
+    font-family: "Oswald", sans-serif;
+    color: #6b7885;
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+  .cell {
+    height: 100px;
+    width: 100px;
+    border: 5px solid #6b7885;
+    cursor: crosshair;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+  }
+  #win-info {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+  }
+  .restart-btn {
+    width: 180px;
+    height: 40px;
+    font-size: 25px;
+    background-color: #6b7885;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: filter 0.3s ease;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 330px) {
+  #board-title {
+    font-family: "Oswald", sans-serif;
+    color: #6b7885;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  .cell {
+    height: 80px;
+    width: 80px;
+    border: 5px solid #6b7885;
+    cursor: crosshair;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+  }
+  #win-info {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+  }
+  .restart-btn {
+    width: 180px;
+    height: 40px;
+    font-size: 25px;
+    background-color: #6b7885;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: filter 0.3s ease;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 2px;
   }
 }/*# sourceMappingURL=style.css.map */
