@@ -1,20 +1,22 @@
 let currentPlayer = "X"; 
 let cells = document.querySelectorAll(".cell");
-
 let winInfo = document.getElementById('win-info');
-
 const restartBtn = document.getElementById('restart-btn');
+let gameOver = false;
 
 function cellClick(cell) {
-    if (!cell.textContent) {
-        cell.textContent = currentPlayer;
-        if (checkWin()) {
-            winInfo.innerHTML = `${currentPlayer} выиграли!`;
-            
-        } else {
-            currentPlayer = currentPlayer == "X" ? "O" : "X";
-        }
-    }
+  if (gameOver){
+    return;
+  }
+  if (!cell.textContent) {
+      cell.textContent = currentPlayer;
+      if (checkWin()) {
+          winInfo.innerHTML = `${currentPlayer} выиграли!`;
+          gameOver = true;
+      } else {
+          currentPlayer = currentPlayer == "X" ? "O" : "X";
+      }
+  }
 }
 
 function checkWin() {
