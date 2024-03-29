@@ -1,0 +1,55 @@
+$cell-height: 150px;
+$cell-width: 150px;
+$cell-border: 2px solid black;
+
+$btn-width: 300px;
+$btn-height: 50px;
+$btn-font_size: 25px;
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: $cell-height;
+  width: $cell-width;
+  border: $cell-border;
+  cursor: crosshair;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.restart-btn{
+  width: $btn-width;
+  height: $btn-height;
+  font-size: $btn-font_size;
+  background-color: deepskyblue;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: filter .2s ease;
+}
+
+#win-info{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (hover:hover){
+  .restart-btn:hover{
+    filter: brightness(90%);
+    transition: filter .2s ease;
+  }
+}
