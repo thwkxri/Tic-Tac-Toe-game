@@ -2,7 +2,7 @@ $cell-height: 170px;
 $cell-width: 170px;
 $cell-border: 10px solid #6b7885;
 
-$btn-width: 300px;
+$btn-width: 200px;
 $btn-height: 60px;
 $btn-font_size: 25px;
 
@@ -22,7 +22,6 @@ body{
   justify-content: center;
   align-items: center;
   font-weight: bold;
- 
 }
 
 #board-title{
@@ -113,6 +112,20 @@ body{
     font-size: 60px;
     font-family: "Kanit", sans-serif;
   }
+  .restart-btn{
+    width: 150px;
+    height: $btn-height;
+    font-size: $btn-font_size;
+    background-color: #6b7885;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: filter .3s ease;
+    font-size: 33px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 2px;
+    color: #1b2837;
+  }
 }
 
 @media(max-width: 415px){
@@ -143,7 +156,7 @@ body{
   }
 
   .restart-btn{
-    width: 180px;
+    width: 100px;
     height: 40px;
     font-size: $btn-font_size;
     background-color: #6b7885;
@@ -186,7 +199,7 @@ body{
   }
 
   .restart-btn{
-    width: 180px;
+    width: 100px;
     height: 40px;
     font-size: $btn-font_size;
     background-color: #6b7885;
