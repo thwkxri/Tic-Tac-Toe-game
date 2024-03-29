@@ -47,5 +47,6 @@ restartBtn.addEventListener('click', (e) => {
   })
   winInfo.textContent = '';
   gameOver = false;
+  currentPlayer = "X";
 })
 
