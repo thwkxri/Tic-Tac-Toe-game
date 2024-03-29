@@ -57,7 +57,7 @@ body {
 }
 
 .restart-btn {
-  width: 200px;
+  width: 300px;
   height: 60px;
   font-size: 25px;
   background-color: #6b7885;
@@ -101,20 +101,6 @@ body {
     font-size: 60px;
     font-family: "Kanit", sans-serif;
   }
-  .restart-btn {
-    width: 150px;
-    height: 60px;
-    font-size: 25px;
-    background-color: #6b7885;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    transition: filter 0.3s ease;
-    font-size: 33px;
-    font-family: "Oswald", sans-serif;
-    letter-spacing: 2px;
-    color: #1b2837;
-  }
 }
 @media (max-width: 415px) {
   #board-title {
@@ -140,7 +126,7 @@ body {
     font-family: "Oswald", sans-serif;
   }
   .restart-btn {
-    width: 100px;
+    width: 180px;
     height: 40px;
     font-size: 25px;
     background-color: #6b7885;
@@ -148,6 +134,7 @@ body {
     border-radius: 5px;
     border: none;
     transition: filter 0.3s ease;
+    font-size: 20px;
     font-family: "Oswald", sans-serif;
     letter-spacing: 2px;
     color: #1b2837;
@@ -177,7 +164,7 @@ body {
     font-family: "Oswald", sans-serif;
   }
   .restart-btn {
-    width: 100px;
+    width: 180px;
     height: 40px;
     font-size: 25px;
     background-color: #6b7885;
@@ -185,9 +172,9 @@ body {
     border-radius: 5px;
     border: none;
     transition: filter 0.3s ease;
+    font-size: 20px;
     font-family: "Oswald", sans-serif;
     letter-spacing: 2px;
     color: #1b2837;
-    font-size: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
