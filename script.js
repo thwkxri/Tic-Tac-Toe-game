@@ -13,6 +13,10 @@ function cellClick(cell) {
       if (checkWin()) {
           winInfo.innerHTML = `${currentPlayer} выиграли!`;
           gameOver = true;
+      }
+      else if (checkDraw()) {
+        winInfo.innerHTML = `Ничья!`;
+        gameOver = true; 
       } else {
           currentPlayer = currentPlayer == "X" ? "O" : "X";
       }
@@ -50,3 +54,6 @@ restartBtn.addEventListener('click', (e) => {
   currentPlayer = "X";
 })
 
+function checkDraw(){
+  return Array.from(cells).every(cell => cell.textContent);
+}
