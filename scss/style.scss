@@ -47,6 +47,10 @@ body{
   font-family: "Kanit", sans-serif;
 }
 
+#cell:hover{
+  background-color: #6b7885;
+}
+
 #cell-1, #cell-2, #cell-3 {
   border-top: none;
 }
@@ -198,3 +202,4 @@ body{
     color: #1b2837;
   }
 }
+ 
